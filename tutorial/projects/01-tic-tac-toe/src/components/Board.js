@@ -52,8 +52,10 @@ class Board extends Component {
         for (let i = 0; i < square.length; i++) {
             if (!square[i]) return "";
         }
-        alert("It is a tie, press the reset button!");
-        return this.resetButton;
+        if(!calculateWinner(this.state.square)) {
+            alert("It is a tie, press the reset button!");
+            return this.resetButton;
+        }
     };
 
     resetButton = () => {
