@@ -20,15 +20,12 @@ class Counter extends Component {
           }
         })
     };
-
     render() {
         return <div className="Counter">
         <Header count={this.state.count} />
             <Button onClick={this.handleIncrease}>Increase</Button>
             <Button onClick={this.handleDecrease}>Decrease</Button>
         </div>
-
-
     }
 }
 
