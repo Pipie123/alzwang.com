@@ -1,0 +1,30 @@
+$primary-color: #333;
+$secondary-color: #fff;
+$third-color: #000;
+$font: monospace;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  color: $secondary-color;
+}
+
+.App {
+  background-color: $primary-color;
+  padding: 1rem;
+
+  .Header{
+    margin: 0;
+    font-size: 1.75rem;
+  }
+  .Paragraph {
+    font-size: 1rem;
+  }
+
+  .Button {
+    border: 2px solid $secondary-color;
+    background-color: $third-color;
+    color: $secondary-color;
+  }
+}
